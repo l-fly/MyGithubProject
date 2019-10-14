@@ -10,8 +10,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //1
-        //develop 1
-        //checkout2
-        //3
+        //checkout 1
     }
 }
