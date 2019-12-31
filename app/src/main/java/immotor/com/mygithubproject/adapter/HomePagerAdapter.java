@@ -5,10 +5,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import immotor.com.mygithubproject.fragment.HomeEmptyFragment;
+import immotor.com.mygithubproject.fragment.HomeLeanFragment;
 import immotor.com.mygithubproject.fragment.HomeMenuFragment;
 
 public class HomePagerAdapter extends FragmentPagerAdapter {
-    private final String[] TITLES = {"example","empty","empty","empty"};
+    private final String[] TITLES = {"example","empty","empty","lean"};
     private Fragment[] fragments;
 
     public HomePagerAdapter(FragmentManager fm) {
@@ -29,7 +30,7 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
                     fragments[position] = HomeEmptyFragment.newInstance();
                     break;
                 case 3:
-                    fragments[position] = HomeEmptyFragment.newInstance();
+                    fragments[position] = HomeLeanFragment.newInstance();
                     break;
                 default:
                     break;

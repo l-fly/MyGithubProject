@@ -1,1 +1,1 @@
-include ':app', ':arcface'
+include ':app', ':arcface', ':lib_common', ':mvvm_common'

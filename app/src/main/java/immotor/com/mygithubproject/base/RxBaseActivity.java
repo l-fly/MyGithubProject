@@ -28,28 +28,23 @@ public abstract class RxBaseActivity extends RxAppCompatActivity {
         initToolBar();
     }
 
-    /**
-     * 生成加载进度条
-     */
-    protected void initProgressDialog(){
-        if (progressDialog == null) {
-            progressDialog = CommonDialog.createLoadingDialog(this, null);
-            progressDialog.setCancelable(false);
-        }
-    }
 
     /**
      * 显示加载进度条
      */
     protected void showProgressDialog(){
-        if (progressDialog != null && !progressDialog.isShowing()) {
+        if (progressDialog == null) {
+            progressDialog = CommonDialog.createLoadingDialog(this, null);
+            progressDialog.setCancelable(false);
+        }
+        if (!progressDialog.isShowing()) {
             progressDialog.show();
         }
     }
     /**
      * 隐藏加载进度条
      */
-    protected void dismissProgressDialog(){
+    protected void hideProgressDialog(){
         if (progressDialog != null&& progressDialog.isShowing()) {
             progressDialog.dismiss();
         }

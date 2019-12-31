@@ -43,8 +43,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     /*内存泄漏*/
-    debugApi'com.squareup.leakcanary:leakcanary-android:1.6.2'
-    releaseApi'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
+    debugApi 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    releaseApi 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
     /*调试*/
     implementation 'com.facebook.stetho:stetho:1.5.0' // 基本操作
     implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'// 网络操作--有网络操作添加
@@ -66,7 +66,7 @@ dependencies {
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
     /*日志打印*/
     implementation 'com.orhanobut:logger:2.2.0'
-   /* ViewPage TabLayout指示器*/
+    /* ViewPage TabLayout指示器*/
     implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
     /* 卡片布局，可设置圆角，阴影等*/
     implementation "com.android.support:cardview-v7:$rootProject.ext.supportVersion"

@@ -41,7 +41,6 @@ public class HomeActivity extends RxBaseActivity {
                 .beginTransaction()
                 .add(R.id.container, homeFragment)
                 .show(homeFragment).commit();
-        initProgressDialog();
 
        /* new Thread(new Runnable() {
             @Override
@@ -79,9 +78,9 @@ public class HomeActivity extends RxBaseActivity {
                 .subscribe(recommendBannerInfo -> {
                     Logger.i("" + recommendBannerInfo.getCode());
                 },throwable -> {
-                    dismissProgressDialog();
+                    hideProgressDialog();
                 },()->{
-                    dismissProgressDialog();
+                    hideProgressDialog();
                 },onSubscribe->{
                     Logger.i("onSubscribe" );
                     Logger.i("currentThread name: " + Thread.currentThread().getName());
