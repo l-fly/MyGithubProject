@@ -124,6 +124,8 @@ public class MainActivity extends BaseMvvmActivity <ActivityMainBinding, MainVie
 
                     mViewModel.name.set("发送者号码：" + phoneNumber.toString() + "  短信内容：" + content.toString());
 
+                    //test
+
                 }
             }
         }
